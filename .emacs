@@ -1,0 +1,11 @@
+	(setq-default indent-tabs-mode nil)
+	(setq-default c-basic-offset 2)
+	(setq-default tab-width 2)
+	(setq indent-line-function 'insert-tab)
+	(global-linum-mode t)
+	(setq linum-format "%d ")
+	(add-hook 'c-mode-common-hook #'hs-minor-mode)
+	(require 'whitespace)
+	(setq whitespace-style '(face tabs lines-tail))
+	(global-whitespace-mode t)
+
